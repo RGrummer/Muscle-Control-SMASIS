@@ -1,0 +1,8 @@
+{
+  "url": "https://cad.onshape.com/documents/aa489f9cb1c9ea54a5d1cd17/w/3593cbc9eabb6e4c2c233d92/e/4a7dfab91eba616b5a761eef",
+  "output_format": "mujoco",
+  "name": "i3_manip",
+  "export_masses": true,
+  "export_inertias": true,
+  "unit_system": "millimeter"
+}

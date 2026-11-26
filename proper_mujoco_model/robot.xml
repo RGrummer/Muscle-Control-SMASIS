@@ -1,0 +1,201 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/aa489f9cb1c9ea54a5d1cd17/w/3593cbc9eabb6e4c2c233d92/e/4a7dfab91eba616b5a761eef -->
+<mujoco model="C:\Users\ryang\Documents\GitHub\BORG-Quinn-PyElastica-Collab\I3_Manipulator\proper_mujoco_model">
+  <compiler angle="radian" meshdir="assets" autolimits="true"/>
+  <default>
+    <default class="C:\Users\ryang\Documents\GitHub\BORG-Quinn-PyElastica-Collab\I3_Manipulator\proper_mujoco_model">
+      <joint frictionloss="0"/>
+      <position kp="50" dampratio="1"/>
+      <geom contype="0" conaffinity="0"/>
+      <default class="visual">
+        <geom type="mesh" contype="0" conaffinity="0" group="2"/>
+      </default>
+      <default class="collision">
+        <geom group="3"/>
+      </default>
+    </default>
+  </default>
+  <worldbody>
+    <!-- Link 91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw -->
+    <body name="91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" pos="0 0 0" quat="1 0 0 0" childclass="C:\Users\ryang\Documents\GitHub\BORG-Quinn-PyElastica-Collab\I3_Manipulator\proper_mujoco_model">
+      <inertial pos="1.59867e-10 -9.16918e-11 0.0109597" mass="0.0183936" fullinertia="9.71301e-06 9.71301e-06 1.04132e-07 2.31285e-15 -7.84376e-14 4.49187e-14"/>
+      <!-- Part 91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw -->
+      <geom type="mesh" class="visual" pos="1.57139e-18 3.51214e-19 0.00775" quat="1 0 0 0" mesh="91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+      <geom type="mesh" class="collision" pos="1.57139e-18 3.51214e-19 0.00775" quat="1 0 0 0" mesh="91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+      <!-- Link link1_2 -->
+      <body name="l1" pos="5.79411e-20 5.30275e-19 -0.01006" quat="0 0 0 -1">
+        <!-- Joint from 91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw to link1_2 -->
+        <joint axis="0 0 1" name="1_l" type="hinge" range="0.0 0.4276056667386108"
+              stiffness="0.01463796416065618" springref="-0.2633942338"
+              damping="6e-4"/>
+        <inertial pos="0.0297658 -0.0741448 0.0126002" mass="0.0478174" fullinertia="0.000132593 2.60545e-05 0.000148231 5.069e-05 -4.43007e-06 1.10435e-05"/>
+        <!-- Part 7532k81_water_resistant_dry_running_thrust_bearing_3 -->
+        <geom type="mesh" class="visual" pos="0.0569278 -0.142015 0.00821875" quat="2.59417e-16 -1 -2.49475e-16 -2.90891e-16" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 -0.142015 0.00821875" quat="2.59417e-16 -1 -2.49475e-16 -2.90891e-16" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+        <!-- Part r1010d_2 -->
+        <geom type="mesh" class="visual" pos="7.05788e-19 -1.16843e-18 -0.006" quat="1.30988e-16 1 -1.35742e-16 8.53985e-17" mesh="r1010d" material="r1010d_material"/>
+        <geom type="mesh" class="collision" pos="7.05788e-19 -1.16843e-18 -0.006" quat="1.30988e-16 1 -1.35742e-16 8.53985e-17" mesh="r1010d" material="r1010d_material"/>
+        <!-- Part 2705t119_light_duty_dry_running_flanged_sleeve_bearing_5 -->
+        <geom type="mesh" class="visual" pos="-4.91202e-18 7.08685e-18 0.02606" quat="1.30988e-16 1 -1.35742e-16 8.53985e-17" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <geom type="mesh" class="collision" pos="-4.91202e-18 7.08685e-18 0.02606" quat="1.30988e-16 1 -1.35742e-16 8.53985e-17" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <!-- Part holder_link_2 -->
+        <geom type="mesh" class="visual" pos="-4.95969e-18 0.005375 0.011" quat="1.18841e-16 1 2.12395e-16 8.53985e-17" mesh="holder_link" material="holder_link_material"/>
+        <geom type="mesh" class="collision" pos="-4.95969e-18 0.005375 0.011" quat="1.18841e-16 1 2.12395e-16 8.53985e-17" mesh="holder_link" material="holder_link_material"/>
+        <!-- Part 94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_3 -->
+        <geom type="mesh" class="visual" pos="0.0569278 -0.142015 0.0211813" quat="0.707107 0.707107 -1.57009e-16 2.00637e-16" mesh="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut" material="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 -0.142015 0.0211813" quat="0.707107 0.707107 -1.57009e-16 2.00637e-16" mesh="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut" material="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material"/>
+        <!-- Part 91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_3 -->
+        <geom type="mesh" class="visual" pos="0.0569278 -0.142015 0.0170688" quat="2.59417e-16 -1 -1.06143e-16 -2.90891e-16" mesh="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 -0.142015 0.0170688" quat="2.59417e-16 -1 -1.06143e-16 -2.90891e-16" mesh="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+        <!-- Part 2705t119_light_duty_dry_running_flanged_sleeve_bearing_6 -->
+        <geom type="mesh" class="visual" pos="0.0569278 -0.142015 0.0173813" quat="0.707107 0 -2.60985e-16 0.707107" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 -0.142015 0.0173813" quat="0.707107 0 -2.60985e-16 0.707107" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <!-- Part 2705t119_light_duty_dry_running_flanged_sleeve_bearing_7 -->
+        <geom type="mesh" class="visual" pos="0.0569278 -0.142015 0.0113813" quat="2.59417e-16 -1 -2.49475e-16 -2.90891e-16" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 -0.142015 0.0113813" quat="2.59417e-16 -1 -2.49475e-16 -2.90891e-16" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <!-- Part l1_2 -->
+        <geom type="mesh" class="visual" pos="-4.0154e-17 0.005375 0.011" quat="1.76575e-16 -1 -2.78098e-16 -3.25598e-16" mesh="l1" material="l1_material"/>
+        <geom type="mesh" class="collision" pos="-4.0154e-17 0.005375 0.011" quat="1.76575e-16 -1 -2.78098e-16 -3.25598e-16" mesh="l1" material="l1_material"/>
+        <!-- Part 91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_4 -->
+        <geom type="mesh" class="visual" pos="0.019877 -0.0495862 0.01384" quat="1.30988e-16 1 -1.35742e-16 8.53985e-17" mesh="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+        <geom type="mesh" class="collision" pos="0.019877 -0.0495862 0.01384" quat="1.30988e-16 1 -1.35742e-16 8.53985e-17" mesh="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+        <!-- Part 2705t119_light_duty_dry_running_flanged_sleeve_bearing_8 -->
+        <geom type="mesh" class="visual" pos="0 7.70372e-34 -0.003" quat="0 1 0 0" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0 7.70372e-34 -0.003" quat="0 1 0 0" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <!-- Part 94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_4 -->
+        <geom type="mesh" class="visual" pos="0.019877 -0.0495862 0.0175" quat="0.707107 0.707107 4.59869e-17 3.75451e-16" mesh="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut" material="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material"/>
+        <geom type="mesh" class="collision" pos="0.019877 -0.0495862 0.0175" quat="0.707107 0.707107 4.59869e-17 3.75451e-16" mesh="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut" material="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material"/>
+        <!-- Part 7532k81_water_resistant_dry_running_thrust_bearing_4 -->
+        <geom type="mesh" class="visual" pos="0.0569278 -0.142015 0.0207813" quat="1 2.73295e-16 -4.22103e-16 -4.9476e-16" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 -0.142015 0.0207813" quat="1 2.73295e-16 -4.22103e-16 -4.9476e-16" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+        <!-- Link l2_2 -->
+        <body name="l2" pos="0.0569278 -0.142015 0.0153813" quat="9.97029e-17 0.521646 0.853162 3.66804e-16">
+          <!-- Joint from link1_2 to l2_2 -->
+          <joint axis="0 0 1" name="2_l" type="hinge"
+                damping="3e-4"/>
+          <inertial pos="-0.0449505 -0.0795336 0.00179974" mass="0.0231224" fullinertia="2.4712e-05 8.94848e-06 3.1063e-05 -1.30906e-05 1.19079e-06 2.10695e-06"/>
+          <!-- Part 2705t119_light_duty_dry_running_flanged_sleeve_bearing_9 -->
+          <geom type="mesh" class="visual" pos="-0.0569278 -0.100726 -0.002" quat="1.64151e-29 -0.707107 -0.707107 -1.17015e-27" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+          <geom type="mesh" class="collision" pos="-0.0569278 -0.100726 -0.002" quat="1.64151e-29 -0.707107 -0.707107 -1.17015e-27" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+          <!-- Part 7532k81_water_resistant_dry_running_thrust_bearing_5 -->
+          <geom type="mesh" class="visual" pos="-0.0569278 -0.100726 0.0074" quat="1 -1.64216e-16 5.89113e-16 1.8575e-16" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+          <geom type="mesh" class="collision" pos="-0.0569278 -0.100726 0.0074" quat="1 -1.64216e-16 5.89113e-16 1.8575e-16" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+          <!-- Part 91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_5 -->
+          <geom type="mesh" class="visual" pos="-0.0569278 -0.100726 0.00345" quat="7.30514e-16 1 3.31186e-17 -1.30635e-15" mesh="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+          <geom type="mesh" class="collision" pos="-0.0569278 -0.100726 0.00345" quat="7.30514e-16 1 3.31186e-17 -1.30635e-15" mesh="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+          <!-- Part 2705t119_light_duty_dry_running_flanged_sleeve_bearing_10 -->
+          <geom type="mesh" class="visual" pos="-0.0569278 -0.100726 0.004" quat="0.707107 4.72065e-16 8.37508e-16 0.707107" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+          <geom type="mesh" class="collision" pos="-0.0569278 -0.100726 0.004" quat="0.707107 4.72065e-16 8.37508e-16 0.707107" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+          <!-- Part 7532k81_water_resistant_dry_running_thrust_bearing_6 -->
+          <geom type="mesh" class="visual" pos="-0.0569278 -0.100726 -0.0054" quat="9.2468e-17 1 3.31186e-17 -5.65535e-16" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+          <geom type="mesh" class="collision" pos="-0.0569278 -0.100726 -0.0054" quat="9.2468e-17 1 3.31186e-17 -5.65535e-16" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+          <!-- Part l2_2 -->
+          <geom type="mesh" class="visual" pos="-0.0569278 0.14739 -0.00938125" quat="8.65826e-17 1 -6.81918e-18 3.47073e-17" mesh="l2" material="l2_material"/>
+          <geom type="mesh" class="collision" pos="-0.0569278 0.14739 -0.00938125" quat="8.65826e-17 1 -6.81918e-18 3.47073e-17" mesh="l2" material="l2_material"/>
+          <!-- Part 94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_5 -->
+          <geom type="mesh" class="visual" pos="-0.0569278 -0.100726 0.0078" quat="0.707107 0.707107 7.20011e-16 -4.6052e-16" mesh="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut" material="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material"/>
+          <geom type="mesh" class="collision" pos="-0.0569278 -0.100726 0.0078" quat="0.707107 0.707107 7.20011e-16 -4.6052e-16" mesh="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut" material="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material"/>
+          <!-- Frame closing_EE_2 -->
+          <site group="3" name="closing_EE_2" pos="-0.0569278 -0.100726 0.0017025" quat="7.36813e-33 -0.707107 0.707107 -2.93499e-32"/>
+          <!-- Frame closing_EE_2_z -->
+          <site group="3" name="closing_EE_2_z" pos="-0.0569278 -0.100726 -0.0982975" quat="7.36813e-33 -0.707107 0.707107 -2.93499e-32"/>
+        </body>
+      </body>
+      <!-- Link link1 -->
+      <body name="r1" pos="2.8894e-17 6.50521e-17 0.028" quat="1 0 0 0">
+        <!-- Joint from 91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw to link1 -->
+        <joint axis="0 0 1" name="1_r" type="hinge" range="-0.4276056667386108 0"
+              stiffness="0.01463796416065618" springref="0.2633942338"
+              damping="6e-4"/>
+        <inertial pos="0.0297658 0.0741448 -0.0216002" mass="0.0478174" fullinertia="0.000132593 2.60545e-05 0.000148231 -5.069e-05 4.43007e-06 1.10435e-05"/>
+        <!-- Part 7532k81_water_resistant_dry_running_thrust_bearing -->
+        <geom type="mesh" class="visual" pos="0.0569278 0.142015 -0.0172187" quat="1 1.8655e-16 -3.24349e-16 2.1599e-16" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 0.142015 -0.0172187" quat="1 1.8655e-16 -3.24349e-16 2.1599e-16" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+        <!-- Part r1010d -->
+        <geom type="mesh" class="visual" pos="-6.77418e-20 2.10862e-19 -0.003" quat="1 0 1.89033e-16 7.50506e-17" mesh="r1010d" material="r1010d_material"/>
+        <geom type="mesh" class="collision" pos="-6.77418e-20 2.10862e-19 -0.003" quat="1 0 1.89033e-16 7.50506e-17" mesh="r1010d" material="r1010d_material"/>
+        <!-- Part 2705t119_light_duty_dry_running_flanged_sleeve_bearing -->
+        <geom type="mesh" class="visual" pos="-6.05997e-20 5.15288e-19 -0.03506" quat="1 -0 -1.35163e-16 1.79023e-16" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <geom type="mesh" class="collision" pos="-6.05997e-20 5.15288e-19 -0.03506" quat="1 -0 -1.35163e-16 1.79023e-16" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <!-- Part holder_link -->
+        <geom type="mesh" class="visual" pos="-1.88953e-20 -0.005375 -0.02" quat="1 -0 -7.15008e-22 -0" mesh="holder_link" material="holder_link_material"/>
+        <geom type="mesh" class="collision" pos="-1.88953e-20 -0.005375 -0.02" quat="1 -0 -7.15008e-22 -0" mesh="holder_link" material="holder_link_material"/>
+        <!-- Part 94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut -->
+        <geom type="mesh" class="visual" pos="0.0569278 0.142015 -0.0301812" quat="0.707107 -0.707107 -1.57009e-16 1.49384e-16" mesh="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut" material="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 0.142015 -0.0301812" quat="0.707107 -0.707107 -1.57009e-16 1.49384e-16" mesh="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut" material="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material"/>
+        <!-- Part 91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw -->
+        <geom type="mesh" class="visual" pos="0.0569278 0.142015 -0.0260687" quat="1 6.68471e-17 4.31453e-17 3.23519e-16" mesh="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 0.142015 -0.0260687" quat="1 6.68471e-17 4.31453e-17 3.23519e-16" mesh="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+        <!-- Part 2705t119_light_duty_dry_running_flanged_sleeve_bearing_2 -->
+        <geom type="mesh" class="visual" pos="0.0569278 0.142015 -0.0263812" quat="2.17859e-16 -0.707107 0.707107 2.2192e-16" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 0.142015 -0.0263812" quat="2.17859e-16 -0.707107 0.707107 2.2192e-16" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <!-- Part 2705t119_light_duty_dry_running_flanged_sleeve_bearing_3 -->
+        <geom type="mesh" class="visual" pos="0.0569278 0.142015 -0.0203812" quat="1 1.95015e-16 -2.12578e-16 2.14014e-16" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 0.142015 -0.0203812" quat="1 1.95015e-16 -2.12578e-16 2.14014e-16" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <!-- Part l1 -->
+        <geom type="mesh" class="visual" pos="-3.07113e-16 -0.005375 -0.02" quat="1 7.07853e-17 -3.4271e-16 3.93873e-16" mesh="l1" material="l1_material"/>
+        <geom type="mesh" class="collision" pos="-3.07113e-16 -0.005375 -0.02" quat="1 7.07853e-17 -3.4271e-16 3.93873e-16" mesh="l1" material="l1_material"/>
+        <!-- Part 91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_2 -->
+        <geom type="mesh" class="visual" pos="0.019877 0.0495862 -0.02284" quat="1 0 1.89033e-16 7.50506e-17" mesh="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+        <geom type="mesh" class="collision" pos="0.019877 0.0495862 -0.02284" quat="1 0 1.89033e-16 7.50506e-17" mesh="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw" material="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material"/>
+        <!-- Part 2705t119_light_duty_dry_running_flanged_sleeve_bearing_4 -->
+        <geom type="mesh" class="visual" pos="-2.10209e-19 2.12685e-19 -0.006" quat="1 1.53243e-16 4.13842e-16 2.28501e-16" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <geom type="mesh" class="collision" pos="-2.10209e-19 2.12685e-19 -0.006" quat="1 1.53243e-16 4.13842e-16 2.28501e-16" mesh="2705t119_light_duty_dry_running_flanged_sleeve_bearing" material="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material"/>
+        <!-- Part 94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_2 -->
+        <geom type="mesh" class="visual" pos="0.019877 0.0495862 -0.0265" quat="0.707107 -0.707107 -1.57009e-16 1.12301e-16" mesh="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut" material="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material"/>
+        <geom type="mesh" class="collision" pos="0.019877 0.0495862 -0.0265" quat="0.707107 -0.707107 -1.57009e-16 1.12301e-16" mesh="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut" material="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material"/>
+        <!-- Part 7532k81_water_resistant_dry_running_thrust_bearing_2 -->
+        <geom type="mesh" class="visual" pos="0.0569278 0.142015 -0.0297812" quat="3.19376e-16 -1 -7.89447e-16 2.87169e-18" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+        <geom type="mesh" class="collision" pos="0.0569278 0.142015 -0.0297812" quat="3.19376e-16 -1 -7.89447e-16 2.87169e-18" mesh="7532k81_water_resistant_dry_running_thrust_bearing" material="7532k81_water_resistant_dry_running_thrust_bearing_material"/>
+        <!-- Link l2 -->
+        <body name="r2" pos="0.0569278 0.142015 -0.0243813" quat="0.99941 1.2812e-16 4.44089e-16 0.0343532">
+          <!-- Joint from link1 to l2 -->
+          <joint axis="0 0 1" name="2_r" type="hinge"
+                damping="3e-4"/>
+          <inertial pos="-0.0284639 0.050363 -0.0025" mass="0.0097297" fullinertia="9.05072e-06 3.01538e-06 1.20256e-05 5.01196e-06 -6.61399e-22 1.21234e-21"/>
+          <!-- Part l2 -->
+          <geom type="mesh" class="visual" pos="-0.0569278 -0.14739 0.00438125" quat="1 -8.65826e-17 2.34686e-17 -3.82486e-19" mesh="l2" material="l2_material"/>
+          <geom type="mesh" class="collision" pos="-0.0569278 -0.14739 0.00438125" quat="1 -8.65826e-17 2.34686e-17 -3.82486e-19" mesh="l2" material="l2_material"/>
+          <!-- Frame closing_EE_1 -->
+          <site group="3" name="closing_EE_1" pos="-0.0569278 0.100726 -1.30104e-18" quat="1 0 2.51646e-20 -2.22045e-16"/>
+          <!-- Frame closing_EE_1_z -->
+          <site group="3" name="closing_EE_1_z" pos="-0.0569278 0.100726 0.1" quat="1 0 2.51646e-20 -2.22045e-16"/>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <asset>
+    <mesh file="91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw.stl"/>
+    <mesh file="7532k81_water_resistant_dry_running_thrust_bearing.stl"/>
+    <mesh file="holder_link.stl"/>
+    <mesh file="2705t119_light_duty_dry_running_flanged_sleeve_bearing.stl"/>
+    <mesh file="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut.stl"/>
+    <mesh file="l2.stl"/>
+    <mesh file="r1010d.stl"/>
+    <mesh file="l1.stl"/>
+    <mesh file="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw.stl"/>
+    <material name="91273a417_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material" rgba="0.980392 0.713725 0.00392157 1"/>
+    <material name="7532k81_water_resistant_dry_running_thrust_bearing_material" rgba="0.917647 0.917647 0.917647 1"/>
+    <material name="r1010d_material" rgba="0.701961 0.682353 0.623529 1"/>
+    <material name="2705t119_light_duty_dry_running_flanged_sleeve_bearing_material" rgba="0.980392 0.713725 0.00392157 1"/>
+    <material name="holder_link_material" rgba="0.615686 0.811765 0.929412 1"/>
+    <material name="94710a103_no_threads_18_8_stainless_steel_nylon_insert_flange_locknut_material" rgba="0.498039 0.498039 0.498039 1"/>
+    <material name="91273a405_no_threads_same_size_thread_18_8_stainless_steel_shoulder_screw_material" rgba="0.231373 0.380392 0.705882 1"/>
+    <material name="l1_material" rgba="0.647059 0.647059 0.647059 1"/>
+    <material name="l2_material" rgba="0.231373 0.380392 0.705882 1"/>
+  </asset>
+  <actuator>
+    <!-- Torque actuator for L1_base -->
+    <motor name="L1_base_motor" joint="1_l"
+          ctrllimited="true" ctrlrange="-0.013 0.013"/>
+
+    <!-- Torque actuator for R1_base -->
+    <motor name="R1_base_motor" joint="1_r"
+          ctrllimited="true" ctrlrange="-0.013 0.013"/>
+  </actuator>
+  <equality>
+    <connect site1="closing_EE_1" site2="closing_EE_2"/>
+    <connect site1="closing_EE_1_z" site2="closing_EE_2_z"/>
+  </equality>
+</mujoco>
